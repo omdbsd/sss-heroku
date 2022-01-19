@@ -21,7 +21,7 @@ http://still-tor-8707.herokuapp.com/ | git@heroku.com:still-tor-8707.git
 Push the code to Heroku.
 
 ```
-$ git push heroku master
+$ git push heroku main
 …
 -----> Compressing... done, 5.1MB
 -----> Launching... done, v3
