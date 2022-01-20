@@ -1,5 +1,5 @@
 {
-  "name": "shadowsocks-heroku",
+  "name": "sss-hrk",
   "version": "0.9.10",
   "dependencies": {
     "bufferutil": "^4.0.1",
