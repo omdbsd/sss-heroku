@@ -55,7 +55,7 @@ $ heroku logs -t --app my_sss
 接入 CloudFlare
 ---------------
 
-新建名为ssswkr的worker，在**快速编辑**中添加以下代码
+假设worker的子域名为 `mysubdomain`，新建名为 `ssswkr` 的 worker，在**快速编辑**中添加以下代码
 
 ```
 addEventListener(
@@ -73,7 +73,7 @@ addEventListener(
 运行客户端
 
 ```
-$ node local.js -s ssswkr.mydomain.workers.dev -l 1080 -m rc4 -k whatever -r 80
+$ node local.js -s ssswkr.mysubdomain.workers.dev -l 1080 -m rc4 -k whatever -r 80
 
 
 支持加密方式
