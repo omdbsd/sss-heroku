@@ -16,7 +16,7 @@ $ cd sss-hrk
 $ heroku create my_sss
 ```
 
-将代码push到Heroku
+将代码 push 到 Heroku
 
 ```
 $ git push heroku main
