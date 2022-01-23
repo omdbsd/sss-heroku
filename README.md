@@ -1,8 +1,5 @@
 使用WebSocket，而不是shadowsocks本身的协议。
 
-Heroku
-------
-
 通过命令行部署
 --------------
 
