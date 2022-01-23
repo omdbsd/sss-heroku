@@ -52,6 +52,30 @@ server listening at { address: '127.0.0.1', family: 'IPv4', port: 1080 }
 $ heroku logs -t --app my_sss
 ```
 
+接入 CloudFlare
+---------------
+
+新建名为ssswkr的worker，在**快速编辑**中添加以下代码
+
+```
+addEventListener(
+  "fetch",event => {
+     let url=new URL(event.request.url);
+     url.hostname="my_sss.herokuapp.com";
+     let request=new Request(url,event.request);
+     event. respondWith(
+       fetch(request)
+     )
+  }
+)
+```
+
+运行客户端
+
+```
+$ node local.js -s ssswkr.mydomain.workers.dev -l 1080 -m rc4 -k whatever -r 80
+
+
 支持加密方式
 -----------------
 
