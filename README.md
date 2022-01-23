@@ -1,15 +1,15 @@
-使用WebSocket，而不是shadowsocks本身的协议。
+使用 WebSocket，而不是 shadowsocks 本身的协议。
 
 通过命令行部署
 --------------
 
-将代码clone到本地
+将代码 clone 到本地
 
 ```
 $ git clone https://github.com/omdbsd/sss-hrk.git
 ```
 
-创建heroku app
+创建 heroku app
 
 ```
 $ cd sss-hrk
@@ -55,7 +55,7 @@ $ heroku logs -t --app my_sss
 接入 CloudFlare
 ---------------
 
-假设worker的子域名为 `mysubdomain`，新建名为 `ssswkr` 的 worker，在**快速编辑**中添加以下代码
+假设 worker 的子域名为 `mysubdomain`，新建名为 `ssswkr` 的 worker，在**快速编辑**中添加以下代码
 
 ```
 addEventListener(
