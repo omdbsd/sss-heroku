@@ -10,35 +10,39 @@ Notice that the protocol is INCOMPATIBLE with the origin shadowsocks.
 Heroku
 ------
 
-### Usage
+通过命令行部署
+--------------
+
+将代码clone到本地
 
 ```
-$ heroku create
-Creating still-tor-8707... done, stack is cedar-14
-http://still-tor-8707.herokuapp.com/ | git@heroku.com:still-tor-8707.git
+$ git clone https://github.com/omdbsd/sss-hrk.git
 ```
 
-Push the code to Heroku.
+创建heroku app
+
+```
+$ cd sss-hrk
+$ heroku create my_sss
+```
+
+将代码push到Heroku
 
 ```
 $ git push heroku main
-…
------> Compressing... done, 5.1MB
------> Launching... done, v3
-       http://still-tor-8707.herokuapp.com/ deployed to Heroku
-
-To git@heroku.com:still-tor-8707.git
- * [new branch]      master -> master
 ```
 
-Set a few configs:
+配置参数
 
 ```
-$ heroku config:set METHOD=rc4 KEY=foobar
-Setting config vars and restarting still-tor-8707... done, v11
-KEY:    foobar
-METHOD: rc4
+$ heroku config:set METHOD=rc4 KEY=whatever
 ```
+
+打开 https://my_sss.herokuapp.com 即可使用。
+
+ 
+
+
 
 Install project dependencies with `npm install`:
 
