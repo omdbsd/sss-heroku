@@ -43,33 +43,27 @@ $ heroku config:set METHOD=rc4 KEY=whatever
  
 
 
+客户端使用
+----------
 
-Install project dependencies with `npm install`:
+使用 `npm install` 安装相关依赖
 
 ```
 $ npm install
 …
 ```
 
-Then run:
+运行客户端
 
 ```
-$ node local.js -s still-tor-8707.herokuapp.com -l 1080 -m rc4 -k foobar -r 80
+$ node local.js -s my_sss.herokuapp.com -l 1080 -m rc4 -k whatever -r 80
 server listening at { address: '127.0.0.1', family: 'IPv4', port: 1080 }
 ```
 
-Change proxy settings of your browser into:
+查看日志
 
 ```
-SOCKS5 127.0.0.1:1080
-```
-
-### Troubleshooting
-
-If there is something wrong, you can check the logs by:
-
-```
-$ heroku logs -t --app still-tor-8707
+$ heroku logs -t --app my_sss
 ```
 
 Supported Ciphers
