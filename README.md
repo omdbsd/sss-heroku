@@ -28,10 +28,6 @@ $ git push heroku main
 $ heroku config:set METHOD=rc4 KEY=whatever
 ```
 
-打开 https://my_sss.herokuapp.com 即可使用。
-
- 
-
 
 客户端使用
 ----------
