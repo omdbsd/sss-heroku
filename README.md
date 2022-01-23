@@ -1,11 +1,4 @@
-shadowsocks-heroku
-==================
-
-shadowsocks-heroku is a lightweight tunnel proxy which can help you get through firewalls. It is a port of [shadowsocks](https://github.com/clowwindy/shadowsocks), but through a different protocol.
-
-shadowsocks-heroku uses WebSocket instead of raw sockets, so it can be deployed on [Heroku](https://www.heroku.com/).
-
-Notice that the protocol is INCOMPATIBLE with the origin shadowsocks.
+使用WebSocket，而不是shadowsocks本身的协议。
 
 Heroku
 ------
@@ -66,7 +59,7 @@ server listening at { address: '127.0.0.1', family: 'IPv4', port: 1080 }
 $ heroku logs -t --app my_sss
 ```
 
-Supported Ciphers
+支持加密方式
 -----------------
 
 - rc4
